@@ -1,0 +1,18 @@
+<services>
+  <service name="obs_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/huakim/py2pack.git</param>
+    <param name="revision">master</param>
+    <param name="without-version">enable</param>
+  </service>
+  <service name="py_build" mode="buildtime">
+    <param name="noop">enable</param>
+  </service>
+  <service name="run" mode="buildtime">
+    <param name="command">source generate_sources.sh</param>
+  </service>
+  <service name="set_version" mode="buildtime">
+    <param name="fromfile">PKGINFO</param>
+  </service>
+</services>
+
