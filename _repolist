@@ -1,0 +1,7 @@
+<repo>
+   <url>https://copr.fedorainfracloud.org/coprs/huakim/kde-plasma/repo/fedora-rawhide/huakim-kde-plasma-fedora-rawhide.repo</url>
+   <pkg>tox</pkg>
+   <pkg>gunzip</pkg>
+   <pkg>gzip</pkg>
+   <pkg>tar</pkg>
+</repo>
