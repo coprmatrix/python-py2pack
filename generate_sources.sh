@@ -14,7 +14,7 @@ then
      cat << EOF
 Epoch: 3
 EOF
-     cat "python-py2pack.spec" | sed 's~\(%package -n %{python_name}\)~\1\nRequires: py2pack-base-templates~ ; s~%install~%install\n mkdir -pv %{buildroot}%{_datadir}/py2pack/templates \n cp py2pack/templates/* %{buildroot}%{_datadir}/py2pack/templates\n~'
+     cat "python-py2pack.spec" | sed 's~\(%package -n %{python_name}\)~\1\nRequires: py2pack-base-templates~ ; s~%install~%install\n mkdir -pv %{buildroot}%{_datadir}/py2pack/templates \n mv py2pack/templates/* %{buildroot}%{_datadir}/py2pack/templates\n~'
      cat << EOF
 
 %package -n py2pack-base-templates
